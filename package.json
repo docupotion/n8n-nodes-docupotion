@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-docupotion",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "n8n community node to generate PDF documents with DocuPotion",
   "license": "MIT",
   "homepage": "https://docupotion.com",
@@ -21,8 +21,7 @@
     "dev": "n8n-node dev",
     "lint": "n8n-node lint",
     "lint:fix": "n8n-node lint --fix",
-    "release": "n8n-node release",
-    "prepublishOnly": "n8n-node prerelease"
+    "release": "n8n-node release"
   },
   "files": [
     "dist"

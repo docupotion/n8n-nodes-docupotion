@@ -1,10 +1,10 @@
 import type {
 	IAuthenticateGeneric,
+	ICredentialTestRequest,
 	ICredentialType,
 	INodeProperties,
 } from 'n8n-workflow';
 
-// eslint-disable-next-line @n8n/community-nodes/credential-test-required
 export class DocupotionApi implements ICredentialType {
 	name = 'docupotionApi';
 
@@ -34,6 +34,14 @@ export class DocupotionApi implements ICredentialType {
 			headers: {
 				Authorization: '=Bearer {{$credentials.apiKey}}',
 			},
+		},
+	};
+
+	test: ICredentialTestRequest = {
+		request: {
+			baseURL: 'https://api.docupotion.com',
+			url: '/v1/account',
+			method: 'GET',
 		},
 	};
 }
