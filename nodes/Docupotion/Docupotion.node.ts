@@ -12,13 +12,13 @@ import {
 
 export class Docupotion implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'DocuPotion',
+		displayName: 'DocuPotion - Generate PDF Documents',
 		name: 'docupotion',
 		icon: { light: 'file:docupotion.svg', dark: 'file:docupotion.dark.svg' },
 		group: ['output'],
 		version: 1,
 		subtitle: 'Create Document',
-		description: 'Generate PDFs from templates using DocuPotion',
+		description: 'Automatically create PDFs from a reusable template. Use our AI-powered document editor to create your template in minutes and generate error-free PDFs at scale.',
 		defaults: {
 			name: 'DocuPotion',
 		},
